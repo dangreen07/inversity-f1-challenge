@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link';
+import SideBarItem from '../components/sidebar-item';
 
 export default function Sidebar() {
     return (
@@ -9,9 +11,14 @@ export default function Sidebar() {
                     height={275}
                     quality={100}
                     alt="A Logo for the company"
-                    className="absolute top-0 left-0"
+                    className="relative top-0 left-0"
             />
-            <div className=""></div>
+            <div className="flex flex-col items-start p-0 gap-2.5 left-8 relative">
+                <SideBarItem name="Overview" href="/" />
+                <SideBarItem name="Tyre" href="/tyre" />
+                <SideBarItem name="Track" href="/track" />
+                <SideBarItem name="Weather" href="/weather" />
+            </div>
         </div>
     );
 }
