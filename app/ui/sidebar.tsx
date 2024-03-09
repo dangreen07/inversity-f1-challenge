@@ -4,7 +4,7 @@ import SideBarItem from '../components/sidebar-item';
 
 export default function Sidebar() {
     return (
-        <div className="absolute w-1/5 h-full bg-[#61FF7E]">
+        <div className="w-1/5 h-screen bg-[#61FF7E]">
             <Image 
                     src="/PrecisionPit Prometrics.png"
                     width={550}

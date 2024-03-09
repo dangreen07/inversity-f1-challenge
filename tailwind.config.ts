@@ -11,7 +11,8 @@ const config: Config = {
       sans: ['ui-sans-serif', 'system-ui'],
       serif: ['ui-serif', 'Georgia'],
       mono: ['ui-monospace', 'SFMono-Regular'],
-      karla: ["Karla","ui-sans-serif"]
+      karla: ["Karla","ui-sans-serif"],
+      kanit: ["Kanit", "ui-sans-serif"],
     },
     extend: {
       backgroundImage: {
