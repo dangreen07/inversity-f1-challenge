@@ -19,7 +19,7 @@ export default function TyrePage() {
                     <DataBox dataName="Pit Stop In" data="8" symbol=" Laps" textBlack={true}/>
                 </div>
             </div>
-            <div className="flex flex-row w-full gap-16">
+            <div className="flex flex-row w-full h-full gap-16 justify-center mt-5">
                 <TirePressures />
                 <TirePerformanceGraph />
             </div>

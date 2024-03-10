@@ -28,13 +28,12 @@ ChartJS.register(
 export const options = {
     responsive: true,
     plugins: {
-      legend: {
-        position: 'top' as const,
-      },
       title: {
-        display: true,
-        text: 'Time Increase Per Lap',
+        display: false
       },
+    },
+    animation: {
+      duration: 0,
     },
 };
 
@@ -46,7 +45,7 @@ export const data = {
     datasets: [
       {
         label: 'C3 Compound',
-        data: [0,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4],
+        data: [0,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4, 0.45],
         borderColor: 'rgb(255, 99, 132)',
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
@@ -55,9 +54,9 @@ export const data = {
 
 export default function TirePerformanceGraph() {
     return (
-        <div className="rounded-xl bg-white mt-5 w-2/5">
+        <div className="rounded-xl bg-white w-2/5 px-5">
             <p className="font-kanit not-italic font-medium text-4xl flex w-full items-center justify-center">Time Increase Per Lap</p>
-            <Line options={options} data={data} />
+            <Line className="pb-5" height={220} options={options} data={data} />
         </div>
     );
 }
