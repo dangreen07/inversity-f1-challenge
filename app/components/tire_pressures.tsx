@@ -1,6 +1,6 @@
 export default function TirePressures() {
     return (
-        <div className="bg-white rounded-2xl w-2/5 flex flex-col mt-5 ml-5">
+        <div className="bg-white rounded-2xl w-2/5 flex flex-col mt-5 ml-5" role="tire_pressures">
             <p className="font-kanit not-italic font-medium text-5xl flex items-center justify-center">Tire Pressures</p>
             <div className="flex flex-row gap-16 justify-center items-center py-6">
                 <div className="flex flex-col w-2/5 bg-[#0F0326] rounded-2xl">
