@@ -6,7 +6,7 @@ export default function Sidebar() {
     return (
         <div className="w-1/5 h-dvh bg-[#61FF7E]" role="sidebar">
             <Image 
-                    src="/PrecisionPit Prometrics.png"
+                    src="/Logo.png"
                     width={550}
                     height={275}
                     quality={100}
