@@ -7,7 +7,7 @@ import TirePerformanceGraph from "../components/tire_performance";
 export default function TyrePage() {
     return (
         <main className="flex flex-col w-full h-full">
-            <Heading pageName="Tyre" />
+            <Heading pageName="Tire" />
             <div className="flex flex-row justify-center items-center gap-20 pt-7">
                 <div className="rounded-2xl bg-[#5386E4] w-1/4">
                     <DataBox dataName="Current Surface Temperature" data="98" symbol="°C" textBlack={true}/>

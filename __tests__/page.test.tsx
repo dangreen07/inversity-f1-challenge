@@ -1,4 +1,4 @@
-import TyrePage from '@/app/tyre/page'
+import TyrePage from '@/app/tire/page'
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 

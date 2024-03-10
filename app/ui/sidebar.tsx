@@ -15,7 +15,7 @@ export default function Sidebar() {
             />
             <div className="flex flex-col items-start p-0 gap-2.5 left-8 relative">
                 <SideBarItem name="Overview" href="/" />
-                <SideBarItem name="Tyre" href="/tyre" />
+                <SideBarItem name="Tire" href="/tire" />
                 <SideBarItem name="Track" href="/track" />
                 <SideBarItem name="Weather" href="/weather" />
             </div>
