@@ -3,7 +3,7 @@ import Heading from "../ui/heading";
 import DataBox from "../components/databox";
 import TirePressures from "../components/tire_pressures";
 import TirePerformanceGraph from "../components/tire_performance";
-import prisma from "@/lib/prisma";
+import { getLatestTireData } from "@/lib/data";
 
 // Null error output object
 const errorOutput = {
@@ -18,29 +18,6 @@ const errorOutput = {
     date: new Date("2004-10-19 10:23:54")
 };
 
-export async function getLatestTireData() {
-    try {
-        const feed = prisma.tire.findFirst({
-            orderBy: {date: 'desc'}
-        });
-        return feed;
-    } catch (error) {
-        return errorOutput;
-    }
-    
-}
-
-export type TireData = {
-    id: string;
-    surfaceTemp: number;
-    tireCompound: string;
-    pitStopIn: number;
-    frontLeftTirePressure: number;
-    frontRightTirePressure: number;
-    backLeftTirePressure: number;
-    backRightTirePressure: number;
-    date: Date;
-}
 
 export default async function TirePage() {
     const latestData = await getLatestTireData();

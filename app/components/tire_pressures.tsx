@@ -1,4 +1,4 @@
-import { TireData } from "../tire/page";
+import { TireData } from "@/lib/data";
 
 export default async function TirePressures({latestData}: {latestData: TireData}) {
     return (
